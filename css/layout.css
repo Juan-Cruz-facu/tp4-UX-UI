@@ -1,0 +1,27 @@
+.header__inner,
+.footer__inner {
+  width: min(100% - 2 * var(--gutter), var(--container));
+  margin-inline: auto;
+}
+
+.categories,
+.promo,
+.newsletter { background: var(--color-sand); }
+
+.products {
+  padding: var(--space-64) var(--gutter);
+  background: var(--color-bg);
+}
+
+.products__title {
+  margin-bottom: var(--space-64);
+  text-align: center;
+  text-transform: uppercase;
+  font: 600 var(--fs-h2) / 1.25 var(--font-display);
+  letter-spacing: var(--tracking-h2);
+}
+
+.testimonials {
+  padding-block: var(--space-64);
+  background: var(--color-bg);
+}

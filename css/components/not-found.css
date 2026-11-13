@@ -1,0 +1,14 @@
+.not-found {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: calc(2 * var(--space-64)) var(--gutter) var(--space-64);
+  background: var(--color-espresso);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.not-found__content { display: grid; justify-items: center; gap: var(--space-24); }
+.not-found__code { font: 700 var(--fs-hero) / 1 var(--font-display); }
+.not-found__title { font: 600 var(--fs-cta) / var(--lh-cta) var(--font-display); }
+.not-found__text { max-width: var(--size-hero-p); font: 400 var(--fs-md) / var(--lh-text) var(--font-body); }

@@ -1,0 +1,87 @@
+.newsletter {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: var(--size-news-h);
+  padding: var(--space-40) var(--gutter);
+  overflow: hidden;
+}
+
+.newsletter__beans {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  max-width: none;
+  height: 100%;
+  width: auto;
+}
+
+.newsletter__beans--left { left: calc(-1 * var(--space-64)); }
+.newsletter__beans--right { right: calc(-1 * var(--space-64)); transform: scaleX(-1); }
+
+.newsletter__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: var(--space-8);
+  width: 100%;
+  text-align: center;
+}
+
+.newsletter__title { font: 600 var(--fs-h2) / 1.25 var(--font-ui); }
+.newsletter__text { font: 500 var(--fs-base) / 1.5 var(--font-ui); }
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  width: 100%;
+  max-width: var(--size-input-w);
+  margin-top: var(--space-16);
+}
+
+.newsletter__field { position: relative; }
+
+.newsletter__icon {
+  position: absolute;
+  top: 50%;
+  left: var(--space-16);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.newsletter__input {
+  width: 100%;
+  height: var(--size-input-h);
+  padding: 0 var(--space-16) 0 var(--space-56);
+  background: var(--color-bg);
+  border: var(--border-w) solid transparent;
+  border-radius: var(--radius-pill);
+  font: 400 var(--fs-base) / 1 var(--font-ui);
+}
+
+.newsletter__input::placeholder { color: var(--color-text-soft); }
+.newsletter__input:user-invalid { border-color: var(--color-maroon); }
+
+.newsletter__btn {
+  min-height: var(--size-input-h);
+  padding-inline: var(--space-28);
+  background: var(--color-espresso);
+  color: var(--color-bg);
+  border: 0;
+  border-radius: var(--radius-pill);
+  font: 500 var(--fs-base) / 1 var(--font-ui);
+  transition: transform var(--transition);
+}
+
+.newsletter__btn:hover { transform: translateY(calc(-1 * var(--border-w))); }
+
+@media (min-width: 768px) {
+  .newsletter__form { flex-direction: row; max-width: none; justify-content: center; }
+  .newsletter__field { width: var(--size-input-w); }
+}
+
+@media (min-width: 1440px) {
+  .newsletter__beans { display: block; }
+}

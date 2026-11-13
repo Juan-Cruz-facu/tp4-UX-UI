@@ -1,0 +1,85 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-16);
+  background: var(--color-sand-20);
+  border: var(--border-w-card) solid var(--color-sand);
+  border-radius: var(--radius-card);
+  transition: box-shadow var(--transition);
+}
+
+.product-card__media {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-img);
+}
+
+.product-card__img {
+  width: 100%;
+  height: auto;
+  transition: transform var(--transition);
+}
+
+.product-card__fav {
+  position: absolute;
+  top: var(--space-8);
+  right: var(--space-8);
+  display: grid;
+  place-items: center;
+  width: var(--size-touch);
+  height: var(--size-touch);
+  cursor: pointer;
+}
+
+.product-card__heart {
+  fill: transparent;
+  stroke: var(--color-white);
+  stroke-width: 2;
+  transition: fill var(--transition);
+}
+
+.product-card__fav-input:checked + .product-card__fav .product-card__heart { fill: var(--color-maroon); }
+.product-card__fav-input:focus-visible + .product-card__fav { outline: var(--border-w) solid var(--color-white); }
+
+.product-card__title { font: 600 var(--fs-card-title) / 1.2 var(--font-body); }
+
+.product-card__desc {
+  color: var(--color-maroon);
+  font: 400 var(--fs-lg) / var(--lh-desc) var(--font-body);
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-16);
+  margin-top: auto;
+}
+
+.product-card__price {
+  color: var(--color-maroon);
+  font: 600 var(--fs-lg) / 1 var(--font-ui);
+}
+
+.product-card__btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--size-touch);
+  padding: var(--space-12) var(--space-24);
+  background: var(--color-maroon);
+  color: var(--color-white);
+  border-radius: var(--radius-btn);
+  font: 500 var(--fs-sm) / 1 var(--font-ui);
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.product-card__btn:hover {
+  background: var(--color-espresso);
+  transform: translateY(calc(-1 * var(--border-w)));
+}
+
+@media (hover: hover) {
+  .product-card:hover { box-shadow: var(--shadow-card); }
+  .product-card:hover .product-card__img { transform: scale(1.03); }
+}

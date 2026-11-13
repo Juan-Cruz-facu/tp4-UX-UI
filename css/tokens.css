@@ -1,0 +1,104 @@
+:root {
+  /* Colores */
+  --color-espresso: #30261c;
+  --color-maroon: #2a0000;
+  --color-sand: #e2d9c8;
+  --color-sand-20: rgba(226, 217, 200, 0.2);
+  --color-sand-40: rgba(226, 217, 200, 0.4);
+  --color-bg: #f1f0ee;
+  --color-muted: #544a3e;
+  --color-border-soft: rgba(48, 38, 28, 0.1);
+  --color-text-soft: rgba(48, 38, 28, 0.7);
+  --color-white: #ffffff;
+  --color-star: #ffb800;
+
+  /* Tipografías */
+  --font-display: "Playfair Display", serif;
+  --font-body: "Outfit", sans-serif;
+  --font-ui: "Poppins", sans-serif;
+  --font-accent: "Reggae One", cursive;
+
+  /* Escala tipográfica */
+  --fs-hero: clamp(2.5rem, 1.5rem + 3.5vw, 4.5rem);
+  --lh-hero: 1.139;
+  --fs-cta: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem);
+  --lh-cta: 1.25;
+  --fs-card-title: clamp(1.75rem, 1.25rem + 1.5vw, 2.375rem);
+  --fs-h2: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --tracking-h2: 0.08em;
+  --fs-logo: 2rem;
+  --fs-footer-h: 1.5rem;
+  --fs-lg: 1.25rem;
+  --tracking-lg: 0.2em;
+  --fs-md: 1.125rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+  --lh-xs: 1.667;
+  --lh-text: 1.444;
+  --lh-desc: 1.4;
+
+  /* Radios */
+  --radius-pill: 100px;
+  --radius-card: 18px;
+  --radius-img: 12px;
+  --radius-btn: 8px;
+
+  /* Espaciado */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-28: 1.75rem;
+  --space-40: 2.5rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --gutter: var(--space-16);
+
+  /* Contenedor, bordes y efectos */
+  --container: 90.25rem;
+  --border-w: 0.125rem;
+  --border-w-card: 0.09375rem;
+  --transition: 200ms ease;
+  --shadow-card: 0 0.5rem 1.5rem var(--color-border-soft);
+
+  /* Medidas del diseño (Figma, 1920 px) */
+  --size-touch: 2.75rem;
+  --size-header-top: 3.4375rem;
+  --size-search: 3.8125rem;
+  --size-menu: 14rem;
+  --size-hero-h: 62.5rem;
+  --size-hero-h-sm: 40rem;
+  --size-hero-text: 34.8125rem;
+  --size-hero-p: 26.9375rem;
+  --size-hero-top: 18.375rem;
+  --size-cat-h: 13.75rem;
+  --size-cat-list: 52.8125rem;
+  --size-cat-icon: 5.125rem;
+  --size-card-w: 22.875rem;
+  --size-carousel: 92.25rem;
+  --size-arrow: 4.4375rem;
+  --size-arrow-out: 8.875rem;
+  --size-promo-h: 20.9375rem;
+  --size-promo-title: 23.25rem;
+  --size-promo-btn-w: 16.125rem;
+  --size-promo-btn-h: 3.1875rem;
+  --size-news-h: 20rem;
+  --size-input-w: 22.75rem;
+  --size-input-h: 2.75rem;
+  --size-footer-h: 22.375rem;
+  --size-avatar: 3.5rem;
+  --size-tc-side-w: 26.0625rem;
+  --size-tc-side-h: 12.9375rem;
+  --size-tc-center-w: 27.5625rem;
+  --size-tc-center-h: 14.6875rem;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  :root { --gutter: 3rem; }
+}

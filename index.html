@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffea | El café más rico de la ciudad</title>
+  <meta name="description" content="Coffea es una cafetería con café recién tostado y postres caseros. Pedí ahora y sumate a nuestro newsletter para obtener 15% de descuento.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coffea | El café más rico de la ciudad">
+  <meta property="og:description" content="Coffea es una cafetería con café recién tostado y postres caseros. Pedí ahora y sumate a nuestro newsletter para obtener 15% de descuento.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta name="theme-color" content="#30261C">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;family=Poppins:wght@400;500;600&amp;family=Reggae+One&amp;display=swap">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="/">Coffea</a>
+      <details class="header__menu">
+        <summary class="header__toggle"><span class="visually-hidden">Menú</span><span class="header__burger" aria-hidden="true"></span></summary>
+        <nav class="header__nav" aria-label="Principal">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#main">inicio</a></li>
+          <li class="header__item"><a class="header__link" href="#coffee-title">café</a></li>
+          <li class="header__item"><a class="header__link" href="#dessert-title">panadería</a></li>
+          <li class="header__item"><a class="header__link" href="#">tienda</a></li>
+          <li class="header__item"><a class="header__link" href="#">nosotros</a></li>
+          <li class="header__item"><a class="header__link header__link--strong" href="#">ingresar</a></li>
+        </ul>
+        </nav>
+      </details>
+      <button class="header__search" type="button" aria-label="Buscar"><img src="assets/icons/search.svg" alt="" width="61" height="61"></button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source srcset="assets/img/hero-768.avif 768w, assets/img/hero.avif 1920w" sizes="100vw" type="image/avif">
+        <source srcset="assets/img/hero-768.webp 768w, assets/img/hero.webp 1920w" sizes="100vw" type="image/webp">
+        <img class="hero__img" src="assets/img/hero.jpg" alt="" width="1920" height="1000" fetchpriority="high" decoding="async">
+      </picture>
+      <div class="hero__content">
+        <p class="hero__eyebrow">BIENVENIDO</p>
+        <h1 class="hero__title" id="hero-title">¡Servimos el café más rico de la ciudad!</h1>
+        <p class="hero__text">Empezá tu día con nuestros granos tostados con dedicación, preparados por baristas apasionados y servidos con una sonrisa.</p>
+        <a class="hero__btn" href="#coffee-title">Pedir ahora</a>
+      </div>
+    </section>
+    <section class="categories" aria-label="Categorías">
+      <ul class="categories__list">
+        <li class="categories__item"><a class="categories__link" href="#coffee-title"><img class="categories__icon" src="assets/icons/cat-hot.svg" alt="" width="82" height="82"><span class="categories__label">Café caliente</span></a></li>
+        <li class="categories__item"><a class="categories__link" href="#coffee-title"><img class="categories__icon" src="assets/icons/cat-cold.svg" alt="" width="82" height="82"><span class="categories__label">Café frío</span></a></li>
+        <li class="categories__item"><a class="categories__link" href="#coffee-title"><img class="categories__icon" src="assets/icons/cat-cup.svg" alt="" width="82" height="82"><span class="categories__label">Café en taza</span></a></li>
+        <li class="categories__item"><a class="categories__link" href="#dessert-title"><img class="categories__icon" src="assets/icons/cat-dessert.svg" alt="" width="82" height="82"><span class="categories__label">Postres</span></a></li>
+      </ul>
+    </section>
+    <section class="products products--coffee" aria-labelledby="coffee-title">
+      <h2 class="products__title" id="coffee-title">NUESTRO CAFÉ ESPECIAL</h2>
+      <div class="carousel">
+        <a class="carousel__arrow carousel__arrow--prev" href="#coffee-1" aria-label="Café especial: anterior"><img src="assets/icons/arrow.svg" alt="" width="71" height="71"></a>
+        <div class="carousel__track">
+        <article class="product-card carousel__item" id="coffee-1">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/coffee-1.avif" type="image/avif"><source srcset="assets/img/coffee-1.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-1.jpg" alt="Taza de café lungo sobre una mesa de madera" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-coffee-1">
+            <label class="product-card__fav" for="fav-coffee-1"><span class="visually-hidden">Marcar Café Lungo como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Café Lungo</h3>
+          <p class="product-card__desc">Intenso, suave y perfectamente equilibrado. Preparado con granos recién tostados.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        <article class="product-card carousel__item" id="coffee-2">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/coffee-2.avif" type="image/avif"><source srcset="assets/img/coffee-2.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-2.jpg" alt="Espresso simple en una taza pequeña" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-coffee-2">
+            <label class="product-card__fav" for="fav-coffee-2"><span class="visually-hidden">Marcar Espresso como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Espresso</h3>
+          <p class="product-card__desc">Intenso, suave y perfectamente equilibrado. Preparado con granos recién tostados.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        <article class="product-card carousel__item" id="coffee-3">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/coffee-3.avif" type="image/avif"><source srcset="assets/img/coffee-3.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-3.jpg" alt="Capuchino con arte en la espuma de leche" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-coffee-3">
+            <label class="product-card__fav" for="fav-coffee-3"><span class="visually-hidden">Marcar Capuchino como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Capuchino</h3>
+          <p class="product-card__desc">Intenso, suave y perfectamente equilibrado. Preparado con granos recién tostados.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        <article class="product-card carousel__item" id="coffee-4">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/coffee-4.avif" type="image/avif"><source srcset="assets/img/coffee-4.webp" type="image/webp"><img class="product-card__img" src="assets/img/coffee-4.jpg" alt="Flat white servido en taza de cerámica" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-coffee-4">
+            <label class="product-card__fav" for="fav-coffee-4"><span class="visually-hidden">Marcar Flat White como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Flat White</h3>
+          <p class="product-card__desc">Intenso, suave y perfectamente equilibrado. Preparado con granos recién tostados.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        </div>
+        <a class="carousel__arrow carousel__arrow--next" href="#coffee-4" aria-label="Café especial: siguiente"><img src="assets/icons/arrow.svg" alt="" width="71" height="71"></a>
+      </div>
+    </section>
+    <section class="products products--dessert" aria-labelledby="dessert-title">
+      <h2 class="products__title" id="dessert-title">NUESTROS POSTRES ESPECIALES</h2>
+      <div class="carousel">
+        <a class="carousel__arrow carousel__arrow--prev" href="#dessert-1" aria-label="Postres especiales: anterior"><img src="assets/icons/arrow.svg" alt="" width="71" height="71"></a>
+        <div class="carousel__track">
+        <article class="product-card carousel__item" id="dessert-1">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/dessert-1.avif" type="image/avif"><source srcset="assets/img/dessert-1.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-1.jpg" alt="Porción de tiramisú espolvoreado con cacao" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-dessert-1">
+            <label class="product-card__fav" for="fav-dessert-1"><span class="visually-hidden">Marcar Tiramisú como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Tiramisú</h3>
+          <p class="product-card__desc">Horneado cada mañana, el compañero ideal para tu café.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        <article class="product-card carousel__item" id="dessert-2">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/dessert-2.avif" type="image/avif"><source srcset="assets/img/dessert-2.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-2.jpg" alt="Porción de cheesecake con frutos rojos" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-dessert-2">
+            <label class="product-card__fav" for="fav-dessert-2"><span class="visually-hidden">Marcar Cheesecake como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Cheesecake</h3>
+          <p class="product-card__desc">Horneado cada mañana, el compañero ideal para tu café.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        <article class="product-card carousel__item" id="dessert-3">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/dessert-3.avif" type="image/avif"><source srcset="assets/img/dessert-3.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-3.jpg" alt="Brownie de chocolate con nueces" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-dessert-3">
+            <label class="product-card__fav" for="fav-dessert-3"><span class="visually-hidden">Marcar Brownie como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Brownie</h3>
+          <p class="product-card__desc">Horneado cada mañana, el compañero ideal para tu café.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        <article class="product-card carousel__item" id="dessert-4">
+          <div class="product-card__media">
+            <picture><source srcset="assets/img/dessert-4.avif" type="image/avif"><source srcset="assets/img/dessert-4.webp" type="image/webp"><img class="product-card__img" src="assets/img/dessert-4.jpg" alt="Medialuna de manteca dorada" width="334" height="364" loading="lazy" decoding="async"></picture>
+            <input class="visually-hidden product-card__fav-input" type="checkbox" id="fav-dessert-4">
+            <label class="product-card__fav" for="fav-dessert-4"><span class="visually-hidden">Marcar Medialuna como favorito</span><svg class="product-card__heart" viewBox="0 0 24 24" width="33" height="33" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 4.5 6.4 4.5c2.1 0 3.8 1.1 5.6 3.2 1.8-2.1 3.5-3.2 5.6-3.2 3.7 0 5.5 3.900 4 7.300C19.500 16.400 12 21 12 21z"/></svg></label>
+          </div>
+          <h3 class="product-card__title">Medialuna</h3>
+          <p class="product-card__desc">Horneado cada mañana, el compañero ideal para tu café.</p>
+          <div class="product-card__footer">
+            <data class="product-card__price" value="200">$ 200</data>
+            <a class="product-card__btn" href="#order">Pedir ahora</a>
+          </div>
+        </article>
+        </div>
+        <a class="carousel__arrow carousel__arrow--next" href="#dessert-4" aria-label="Postres especiales: siguiente"><img src="assets/icons/arrow.svg" alt="" width="71" height="71"></a>
+      </div>
+    </section>
+    <section class="promo" aria-labelledby="promo-title">
+      <img class="promo__img promo__img--hand" src="assets/img/promo-hand.png" alt="" width="520" height="335" loading="lazy" decoding="async">
+      <div class="promo__content">
+        <h2 class="promo__title" id="promo-title">Descubrí nuestros mejores granos de café</h2>
+        <a class="promo__btn" href="#coffee-title">Explorar productos <span class="promo__chevrons" aria-hidden="true"><img src="assets/icons/chevron.svg" alt="" width="20" height="20"><img src="assets/icons/chevron.svg" alt="" width="20" height="20"></span></a>
+      </div>
+      <img class="promo__img promo__img--beans" src="assets/img/promo-beans.png" alt="" width="503" height="335" loading="lazy" decoding="async">
+    </section>
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <header class="testimonials__header">
+        <p class="testimonials__kicker">Vení y sumate</p>
+        <h2 class="testimonials__title" id="testimonials-title">NUESTROS CLIENTES FELICES</h2>
+      </header>
+      <div class="testimonials__track carousel__track">
+        <figure class="testimonial-card carousel__item" id="t-1">
+          <blockquote class="testimonial-card__quote">
+            <p>Vengo todas las mañanas antes de ir al estudio. El capuchino es perfecto y el lugar es tan tranquilo que a veces me quedo a trabajar un rato.</p>
+          </blockquote>
+          <figcaption class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="assets/img/avatar-1.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <span class="testimonial-card__id"><span class="testimonial-card__name">María González</span><span class="testimonial-card__role">Diseñadora gráfica</span></span>
+            <span class="testimonial-card__rating" role="img" aria-label="5 de 5 estrellas"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card carousel__item testimonial-card--featured" id="t-2">
+          <blockquote class="testimonial-card__quote">
+            <p>Las medialunas y el café lungo son lo mejor de la zona. Siempre me atienden con una sonrisa y el pedido llega rápido, incluso en hora pico.</p>
+          </blockquote>
+          <figcaption class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="assets/img/avatar-2.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <span class="testimonial-card__id"><span class="testimonial-card__name">Lucas Fernández</span><span class="testimonial-card__role">Docente</span></span>
+            <span class="testimonial-card__rating" role="img" aria-label="4 de 5 estrellas"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img class="testimonial-card__star--off" src="assets/icons/star.svg" alt="" width="24" height="24"></span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card carousel__item" id="t-3">
+          <blockquote class="testimonial-card__quote">
+            <p>Pedí el tiramisú para una reunión con clientes y fue un éxito total. Se nota que todo es casero y fresco. Súper recomendable.</p>
+          </blockquote>
+          <figcaption class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="assets/img/avatar-3.jpg" alt="" width="56" height="56" loading="lazy" decoding="async">
+            <span class="testimonial-card__id"><span class="testimonial-card__name">Camila Rossi</span><span class="testimonial-card__role">Emprendedora</span></span>
+            <span class="testimonial-card__rating" role="img" aria-label="5 de 5 estrellas"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"><img src="assets/icons/star.svg" alt="" width="24" height="24"></span>
+          </figcaption>
+        </figure>
+      </div>
+      <nav class="testimonials__pager" aria-label="Testimonios">
+        <a class="testimonials__dot" href="#t-1" aria-label="Testimonio 1"></a>
+        <a class="testimonials__dot" href="#t-2" aria-label="Testimonio 2"></a>
+        <a class="testimonials__dot" href="#t-3" aria-label="Testimonio 3"></a>
+      </nav>
+    </section>
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <img class="newsletter__beans newsletter__beans--left" src="assets/img/newsletter-beans.png" alt="" width="482" height="321" loading="lazy" decoding="async">
+      <div class="newsletter__content">
+        <h2 class="newsletter__title" id="newsletter-title">¡Sumate y obtené 15% de descuento!</h2>
+        <p class="newsletter__text">Suscribite a nuestro newsletter y recibí ofertas exclusivas.</p>
+        <form class="newsletter__form" action="#">
+          <label class="visually-hidden" for="newsletter-email">Correo electrónico</label>
+          <div class="newsletter__field">
+            <img class="newsletter__icon" src="assets/icons/mail.svg" alt="" width="24" height="24">
+            <input class="newsletter__input" id="newsletter-email" name="email" type="email" required autocomplete="email" placeholder="Ingresá tu email">
+          </div>
+          <button class="newsletter__btn" type="submit">Suscribirme</button>
+        </form>
+      </div>
+      <img class="newsletter__beans newsletter__beans--right" src="assets/img/newsletter-beans.png" alt="" width="482" height="321" loading="lazy" decoding="async">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="footer__logo" href="/">Coffea</a>
+      <nav class="footer__col" aria-labelledby="f-privacy">
+        <h3 class="footer__heading" id="f-privacy">PRIVACIDAD</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#">Política de privacidad</a></li>
+          <li><a class="footer__link" href="#">Términos de uso</a></li>
+          <li><a class="footer__link" href="#">Cookies</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="f-services">
+        <h3 class="footer__heading" id="f-services">SERVICIOS</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#">Pedidos online</a></li>
+          <li><a class="footer__link" href="#">Catering</a></li>
+          <li><a class="footer__link" href="#">Tarjetas de regalo</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="f-about-us">
+        <h3 class="footer__heading" id="f-about-us">SOBRE NOSOTROS</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#">Nuestra historia</a></li>
+          <li><a class="footer__link" href="#">Nuestro equipo</a></li>
+          <li><a class="footer__link" href="#">Trabajá con nosotros</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="f-information">
+        <h3 class="footer__heading" id="f-information">INFORMACIÓN</h3>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#">Planes y precios</a></li>
+          <li><a class="footer__link" href="#">Preguntas frecuentes</a></li>
+          <li><a class="footer__link" href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col footer__col--social">
+        <h3 class="footer__heading" id="f-social">REDES SOCIALES</h3>
+        <ul class="footer__social" aria-labelledby="f-social">
+          <li><a class="footer__social-link" href="#" aria-label="X (Twitter)"><img src="assets/icons/social-x.svg" alt="" width="24" height="24"></a></li>
+          <li><a class="footer__social-link" href="#" aria-label="Instagram"><img src="assets/icons/social-instagram.svg" alt="" width="24" height="24"></a></li>
+          <li><a class="footer__social-link" href="#" aria-label="Facebook"><img src="assets/icons/social-facebook.svg" alt="" width="24" height="24"></a></li>
+          <li><a class="footer__social-link" href="#" aria-label="LinkedIn"><img src="assets/icons/social-linkedin.svg" alt="" width="24" height="24"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
